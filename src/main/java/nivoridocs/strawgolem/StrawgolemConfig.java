@@ -14,8 +14,15 @@ public class StrawgolemConfig {
 	@Config.Comment("Allow the straw golems to replant a crop when they haverst it.")
 	public static boolean replantEnabled = false;
 	
+	@Config.Comment("Make the straw golems run for a shelter while rining.")
+	public static boolean escapeRainEnbled = true;
+	
 	public static boolean isReplantEnabled() {
 		return replantEnabled;
+	}
+	
+	public static boolean isEscapeRainEnbled() {
+		return escapeRainEnbled;
 	}
 	
 	@SubscribeEvent
