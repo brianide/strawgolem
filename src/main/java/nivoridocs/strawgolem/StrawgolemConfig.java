@@ -15,14 +15,14 @@ public class StrawgolemConfig {
 	public static boolean replantEnabled = false;
 	
 	@Config.Comment("Make the straw golems run for a shelter while rining.")
-	public static boolean escapeRainEnbled = true;
+	public static boolean escapeRainEnabled = true;
 	
 	public static boolean isReplantEnabled() {
 		return replantEnabled;
 	}
 	
-	public static boolean isEscapeRainEnbled() {
-		return escapeRainEnbled;
+	public static boolean isEscapeRainEnabled() {
+		return escapeRainEnabled;
 	}
 	
 	@SubscribeEvent
