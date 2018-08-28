@@ -26,6 +26,7 @@ public class EntityStrawGolem extends EntityGolem {
 		int i = 0;
 		this.tasks.addTask(i++, new EntityAISwimming(this));
 		this.tasks.addTask(i++, new EntityAIAvoidEntity<>(this, EntityMob.class, 8.0F, 0.6D, 0.6D));
+		this.tasks.addTask(i++, new EntityAIFleeRain(this, 0.6D));
 		this.tasks.addTask(i++, new EntityAIHarvest(this, 0.6D));
 		this.tasks.addTask(i++, new EntityAIWatchClosest(this, EntityPlayer.class, 6.0F));
         this.tasks.addTask(i, new EntityAILookIdle(this));
