@@ -18,12 +18,19 @@ public class StrawgolemConfig {
 	@Config.RangeInt(min = -1, max = Integer.MAX_VALUE)
 	public static int lifespan = 168000;
 	
+	@Config.Comment("Make the straw golems run for a shelter while rining.")
+	public static boolean escapeRainEnbled = true;
+	
 	public static boolean isReplantEnabled() {
 		return replantEnabled;
 	}
 	
 	public static int getLifespan() {
 		return lifespan;
+	}
+	
+	public static boolean isEscapeRainEnbled() {
+		return escapeRainEnbled;
 	}
 	
 	@SubscribeEvent
