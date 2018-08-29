@@ -19,7 +19,7 @@ public class StrawgolemConfig {
 	public static int lifespan = 168000;
 	
 	@Config.Comment("Make the straw golems run for a shelter while rining.")
-	public static boolean escapeRainEnbled = true;
+	public static boolean escapeRainEnabled = true;
 	
 	public static boolean isReplantEnabled() {
 		return replantEnabled;
@@ -29,8 +29,8 @@ public class StrawgolemConfig {
 		return lifespan;
 	}
 	
-	public static boolean isEscapeRainEnbled() {
-		return escapeRainEnbled;
+	public static boolean isEscapeRainEnabled() {
+		return escapeRainEnabled;
 	}
 	
 	@SubscribeEvent

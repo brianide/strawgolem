@@ -28,7 +28,7 @@ public class EntityAIFleeRain extends EntityAIBase {
 
 	@Override
 	public boolean shouldExecute() {
-		if (StrawgolemConfig.isEscapeRainEnbled()) {
+		if (StrawgolemConfig.isEscapeRainEnabled()) {
 			BlockPos golemPos = new BlockPos(golem.posX, golem.getEntityBoundingBox().minY, golem.posZ);
 			if (world.isRainingAt(golemPos) && world.canSeeSky(golemPos)) {
 				Vec3d vec3d = findPossibleShelter();
